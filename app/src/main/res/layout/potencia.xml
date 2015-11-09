@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="match_parent">
+   <TextView
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:text="Potencia de un número"
+       android:id="@+id/title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para calcular la potencia de un numero debes agregar la potencia y el numero"
+        android:layout_below="@+id/title"
+        android:id="@+id/subtitle"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etpotencia"
+        android:layout_below="@+id/subtitle"
+        android:layout_centerHorizontal="true"
+        android:hint="Potencia"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etnumero"
+        android:layout_below="@+id/etpotencia"
+        android:layout_centerHorizontal="true"
+        android:hint="Numero"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@+id/etnumero"
+        android:id="@+id/btncalcpotencia"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlimpiar"
+        android:text="Limpiar"
+        android:layout_below="@id/btncalcpotencia"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlimpiar"
+        android:id="@+id/respotencia"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Factorial de un número"
+        android:id="@+id/titleft"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para calcular el factorial de un numero debes agregar el numero a calcular"
+        android:layout_below="@+id/titleft"
+        android:id="@+id/subtitleft"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etfibonacci"
+        android:layout_below="@+id/subtitleft"
+        android:layout_centerHorizontal="true"
+        android:hint="Factorial"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@+id/etfibonacci"
+        android:id="@+id/btncalcfactorial"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlimpiarft"
+        android:text="Limpiar"
+        android:layout_below="@id/btncalcfactorial"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlimpiarft"
+        android:id="@+id/resfactorial"/>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Serie Fibonacci"
+        android:id="@+id/titlefb"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para calcular el fibonacci debes agregar el numero total de la serie"
+        android:layout_below="@+id/titlefb"
+        android:id="@+id/subtitlefb"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/etfibonacci"
+        android:layout_below="@+id/subtitlefb"
+        android:layout_centerHorizontal="true"
+        android:hint="Fibonacci"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@+id/etfibonacci"
+        android:id="@+id/btncalcfibonacci"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlimpiarfb"
+        android:text="Limpiar"
+        android:layout_below="@id/btncalcfibonacci"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnlimpiarfb"
+        android:id="@+id/resfibonacci"/>
+
+</RelativeLayout>
